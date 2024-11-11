@@ -2,6 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <nav className="relative w-full z-50 border-b border-white/10">
       <div className="container mx-auto flex items-center justify-between h-16">
@@ -10,18 +15,30 @@ const Navbar = () => {
         </Link>
         
         <div className="hidden md:flex items-center space-x-6">
-          <Link to="/products" className="text-sm font-medium hover:text-primary">
+          <button 
+            onClick={() => scrollToSection('features')} 
+            className="text-sm font-medium hover:text-primary"
+          >
             Products
-          </Link>
-          <Link to="/solutions" className="text-sm font-medium hover:text-primary">
+          </button>
+          <button 
+            onClick={() => scrollToSection('integrate')} 
+            className="text-sm font-medium hover:text-primary"
+          >
             Solutions
-          </Link>
-          <Link to="/resources" className="text-sm font-medium hover:text-primary">
+          </button>
+          <button 
+            onClick={() => scrollToSection('community')} 
+            className="text-sm font-medium hover:text-primary"
+          >
             Resources
-          </Link>
-          <Link to="/pricing" className="text-sm font-medium hover:text-primary">
-            Pricing
-          </Link>
+          </button>
+          <button 
+            onClick={() => scrollToSection('team')} 
+            className="text-sm font-medium hover:text-primary"
+          >
+            Team
+          </button>
         </div>
 
         <div className="flex items-center space-x-4">

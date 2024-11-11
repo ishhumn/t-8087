@@ -32,7 +32,7 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 bg-white">
+      <section id="features" className="py-24 bg-white">
         <div className="container mx-auto">
           <h2 className="text-3xl font-mono font-bold mb-12 text-center text-blue-600">
             /CAPABILITIES
@@ -58,7 +58,7 @@ const Index = () => {
       </section>
 
       {/* Community Section */}
-      <section className="py-24 bg-blue-600">
+      <section id="community" className="py-24 bg-blue-600">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-mono font-bold text-white mb-12">
             /COMMUNITY
@@ -84,7 +84,7 @@ const Index = () => {
       </section>
 
       {/* Integration Section */}
-      <section className="py-24 bg-white">
+      <section id="integrate" className="py-24 bg-white">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -119,7 +119,7 @@ const Index = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 bg-blue-600">
+      <section id="team" className="py-24 bg-blue-600">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-mono font-bold mb-12 text-white">/TEAM</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

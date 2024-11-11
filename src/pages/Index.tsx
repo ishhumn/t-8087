@@ -17,15 +17,15 @@ const Index = () => {
             <br />
             DATABASE
           </h1>
-          <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-8 text-blue-100">
+          <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-8 text-blue-50">
             The leading cloud database service on the market, with unmatched data
             distribution and mobility across AWS, Azure, and Google Cloud.
           </p>
           <div className="flex justify-center space-x-4">
-            <Button size="lg" variant="secondary">
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
               Get Started
             </Button>
-            <Button size="lg" variant="outline">
+            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
               Documentation
             </Button>
           </div>
@@ -43,7 +43,7 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-24">
+      <section className="py-24 bg-background">
         <div className="container mx-auto">
           <h2 className="text-3xl font-mono font-bold mb-12 text-center">
             /CAPABILITIES

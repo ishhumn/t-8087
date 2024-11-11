@@ -1,7 +1,6 @@
 import { Database, Server, Network } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
-import CodeBlock from "@/components/CodeBlock";
 import FeatureCard from "@/components/FeatureCard";
 
 const Index = () => {
@@ -29,16 +28,6 @@ const Index = () => {
               Documentation
             </Button>
           </div>
-        </div>
-      </section>
-
-      {/* Code Preview Section */}
-      <section className="py-24 bg-black">
-        <div className="container mx-auto">
-          <h2 className="text-3xl font-mono font-bold text-white mb-8 text-center">
-            /QUERY
-          </h2>
-          <CodeBlock />
         </div>
       </section>
 

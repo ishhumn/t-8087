@@ -5,7 +5,7 @@ import FeatureCard from "@/components/FeatureCard";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       <Navbar />
       
       {/* Hero Section */}
@@ -32,9 +32,9 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 bg-background">
+      <section className="py-24 bg-white">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-mono font-bold mb-12 text-center">
+          <h2 className="text-3xl font-mono font-bold mb-12 text-center text-blue-600">
             /CAPABILITIES
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -58,24 +58,24 @@ const Index = () => {
       </section>
 
       {/* Community Section */}
-      <section className="py-24 bg-black/95">
+      <section className="py-24 bg-blue-600">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-mono font-bold text-white mb-12">
             /COMMUNITY
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-6 rounded-lg bg-white/5 backdrop-blur">
-              <Users className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+            <div className="p-6 rounded-lg bg-white/10 backdrop-blur">
+              <Users className="w-12 h-12 text-white mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-white mb-2">50K+</h3>
               <p className="text-blue-100">Active Developers</p>
             </div>
-            <div className="p-6 rounded-lg bg-white/5 backdrop-blur">
-              <Code className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+            <div className="p-6 rounded-lg bg-white/10 backdrop-blur">
+              <Code className="w-12 h-12 text-white mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-white mb-2">1M+</h3>
               <p className="text-blue-100">Lines of Code</p>
             </div>
-            <div className="p-6 rounded-lg bg-white/5 backdrop-blur">
-              <Globe className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+            <div className="p-6 rounded-lg bg-white/10 backdrop-blur">
+              <Globe className="w-12 h-12 text-white mx-auto mb-4" />
               <h3 className="text-xl font-semibold text-white mb-2">100+</h3>
               <p className="text-blue-100">Countries</p>
             </div>
@@ -84,26 +84,26 @@ const Index = () => {
       </section>
 
       {/* Integration Section */}
-      <section className="py-24 bg-background">
+      <section className="py-24 bg-white">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-mono font-bold mb-6">/INTEGRATE</h2>
-              <p className="text-lg text-muted-foreground mb-8">
+              <h2 className="text-3xl font-mono font-bold mb-6 text-blue-600">/INTEGRATE</h2>
+              <p className="text-lg text-blue-600/80 mb-8">
                 Seamlessly integrate with your existing tech stack using our comprehensive API and extensive documentation. Support for multiple programming languages and frameworks.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-blue-500 rounded-full" />
-                  <p>RESTful API endpoints</p>
+                  <p className="text-blue-600">RESTful API endpoints</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-blue-500 rounded-full" />
-                  <p>WebSocket support</p>
+                  <p className="text-blue-600">WebSocket support</p>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-blue-500 rounded-full" />
-                  <p>GraphQL integration</p>
+                  <p className="text-blue-600">GraphQL integration</p>
                 </div>
               </div>
             </div>
@@ -119,9 +119,9 @@ const Index = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 bg-gradient-to-b from-background to-black/95">
+      <section className="py-24 bg-blue-600">
         <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-mono font-bold mb-12">/TEAM</h2>
+          <h2 className="text-3xl font-mono font-bold mb-12 text-white">/TEAM</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="p-6">
               <img
@@ -129,8 +129,8 @@ const Index = () => {
                 alt="Team collaboration"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h3 className="text-lg font-semibold mb-2">Enterprise Support</h3>
-              <p className="text-muted-foreground">24/7 dedicated team support</p>
+              <h3 className="text-lg font-semibold mb-2 text-white">Enterprise Support</h3>
+              <p className="text-blue-100">24/7 dedicated team support</p>
             </div>
             <div className="p-6">
               <img
@@ -138,8 +138,8 @@ const Index = () => {
                 alt="Robot"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h3 className="text-lg font-semibold mb-2">AI Integration</h3>
-              <p className="text-muted-foreground">Advanced ML capabilities</p>
+              <h3 className="text-lg font-semibold mb-2 text-white">AI Integration</h3>
+              <p className="text-blue-100">Advanced ML capabilities</p>
             </div>
             <div className="p-6">
               <img
@@ -147,8 +147,8 @@ const Index = () => {
                 alt="Technology"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h3 className="text-lg font-semibold mb-2">Modern Stack</h3>
-              <p className="text-muted-foreground">Latest tech implementation</p>
+              <h3 className="text-lg font-semibold mb-2 text-white">Modern Stack</h3>
+              <p className="text-blue-100">Latest tech implementation</p>
             </div>
             <div className="p-6">
               <img
@@ -156,28 +156,28 @@ const Index = () => {
                 alt="Smart living"
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h3 className="text-lg font-semibold mb-2">Smart Solutions</h3>
-              <p className="text-muted-foreground">Intelligent automation</p>
+              <h3 className="text-lg font-semibold mb-2 text-white">Smart Solutions</h3>
+              <p className="text-blue-100">Intelligent automation</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-background border-t py-12">
+      <footer className="bg-white border-t border-blue-100 py-12">
         <div className="container mx-auto">
           <div className="flex justify-between items-center">
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-blue-600">
               © 2024 MaxData Inc. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-muted-foreground hover:text-primary">
+              <a href="#" className="text-blue-600 hover:text-blue-700">
                 Twitter
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary">
+              <a href="#" className="text-blue-600 hover:text-blue-700">
                 GitHub
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary">
+              <a href="#" className="text-blue-600 hover:text-blue-700">
                 Discord
               </a>
             </div>

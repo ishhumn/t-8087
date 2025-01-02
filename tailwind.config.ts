@@ -59,7 +59,7 @@ export default {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'hero-gradient': 'linear-gradient(to bottom right, #3b82f6, #1d4ed8)',
+        'hero-gradient': 'linear-gradient(to bottom right, #1A1F2C, #221F26)',
       },
       keyframes: {
         "accordion-down": {

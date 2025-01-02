@@ -11,6 +11,7 @@ import Events from "./pages/Events";
 import Gallery from "./pages/Gallery";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import BlogPost from "./pages/BlogPost";
 // import AdminDashboard from "./pages/AdminDashboard";
 import AdminReviews from "./pages/AdminReviews";
 import AdminEvents from "./pages/AdminEvents";
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
 {/*           <Route path="/admin" element={<AdminDashboard />} /> */}

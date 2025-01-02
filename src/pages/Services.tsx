@@ -2,10 +2,10 @@ import Navbar from "@/components/Navbar";
 import { Bot, Cpu, LineChart, Users, Code, Shield } from "lucide-react";
 
 const ServiceCard = ({ title, description, icon: Icon }) => (
-  <div className="p-6 border border-gray-200 rounded-lg hover:shadow-lg transition-all bg-white">
-    <Icon className="w-12 h-12 text-gray-700 mb-4" />
-    <h3 className="text-xl font-semibold text-gray-800 mb-3">{title}</h3>
-    <p className="text-gray-600">{description}</p>
+  <div className="p-8 border border-gray-800 rounded-xl hover:shadow-xl transition-all bg-gray-900/50 backdrop-blur-sm">
+    <Icon className="w-12 h-12 text-blue-400 mb-4" />
+    <h3 className="text-xl font-semibold text-gray-100 mb-3">{title}</h3>
+    <p className="text-gray-300">{description}</p>
   </div>
 );
 
@@ -44,12 +44,12 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#1A1F2C] bg-gradient-to-br from-[#1A1F2C] to-[#2C1F26]">
       <Navbar />
       <div className="pt-24 pb-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-mono font-bold text-gray-900 mb-4">Our Services</h1>
-          <p className="text-xl text-gray-600 mb-12 max-w-3xl">
+          <h1 className="text-4xl font-mono font-bold text-gray-100 mb-4">Our Services</h1>
+          <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
             We offer a comprehensive suite of AI-powered solutions designed to transform your business operations and enhance employee productivity.
           </p>
           

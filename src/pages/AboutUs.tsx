@@ -1,51 +1,76 @@
 import Navbar from "@/components/Navbar";
+import { Award, Building2, Globe2, Users2 } from "lucide-react";
 
 const AboutUs = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <Navbar />
       <div className="pt-24 pb-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-mono font-bold text-gray-900 mb-8">About Us</h1>
+          {/* Hero Section */}
+          <div className="text-center mb-16">
+            <h1 className="text-4xl md:text-5xl font-mono font-bold text-gray-900 mb-6">About AI-Solutions</h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Pioneering the future of workplace technology through innovative AI solutions
+              that transform how businesses operate and employees work.
+            </p>
+          </div>
           
+          {/* Main Content */}
           <div className="grid md:grid-cols-2 gap-12">
-            <div className="space-y-6">
-              <h2 className="text-2xl font-semibold text-gray-800">Our Story</h2>
-              <p className="text-gray-600 leading-relaxed">
-                Founded in Sunderland, AI-Solutions emerged from a vision to revolutionize how businesses interact with artificial intelligence. Our journey began with a simple yet powerful idea: to make advanced AI technology accessible, practical, and transformative for businesses of all sizes.
-              </p>
+            <div className="space-y-8">
+              <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+                <Building2 className="w-8 h-8 text-blue-700 mb-4" />
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Our Story</h2>
+                <p className="text-gray-600 leading-relaxed">
+                  Founded in Sunderland with a vision to revolutionize workplace technology,
+                  AI-Solutions emerged from a deep understanding of the challenges modern
+                  businesses face. Our journey began with a simple yet powerful mission:
+                  to make advanced AI technology accessible and transformative for
+                  organizations of all sizes.
+                </p>
+              </div>
               
-              <h2 className="text-2xl font-semibold text-gray-800">Our Mission</h2>
-              <p className="text-gray-600 leading-relaxed">
-                We are dedicated to pioneering the future of digital workplace solutions through innovative AI integration. Our mission is to enhance human capabilities, not replace them, by providing intelligent tools that streamline workflows, boost productivity, and foster creativity.
-              </p>
-              
-              <h2 className="text-2xl font-semibold text-gray-800">Our Vision</h2>
-              <p className="text-gray-600 leading-relaxed">
-                We envision a future where AI technology seamlessly integrates into every aspect of the workplace, empowering employees to achieve their full potential while driving business growth and innovation.
-              </p>
+              <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+                <Globe2 className="w-8 h-8 text-blue-700 mb-4" />
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Our Mission</h2>
+                <p className="text-gray-600 leading-relaxed">
+                  We are dedicated to pioneering the future of digital workplace solutions
+                  through innovative AI integration. Our mission is to enhance human
+                  capabilities by providing intelligent tools that streamline workflows,
+                  boost productivity, and foster creativity in the modern workplace.
+                </p>
+              </div>
             </div>
             
-            <div className="space-y-6">
-              <h2 className="text-2xl font-semibold text-gray-800">Our Approach</h2>
-              <p className="text-gray-600 leading-relaxed">
-                At AI-Solutions, we combine cutting-edge artificial intelligence with human-centered design principles. Our solutions are built on three core pillars:
-              </p>
-              <ul className="list-disc list-inside space-y-3 text-gray-600">
-                <li>Innovation in AI Technology</li>
-                <li>User-Centric Design</li>
-                <li>Continuous Learning and Adaptation</li>
-              </ul>
+            <div className="space-y-8">
+              <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+                <Users2 className="w-8 h-8 text-blue-700 mb-4" />
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Our Approach</h2>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  At AI-Solutions, we combine cutting-edge artificial intelligence with
+                  human-centered design principles. Our solutions are built on three core pillars:
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  <li>Innovation in AI Technology</li>
+                  <li>User-Centric Design</li>
+                  <li>Continuous Learning and Adaptation</li>
+                </ul>
+              </div>
               
-              <h2 className="text-2xl font-semibold text-gray-800">Our Impact</h2>
-              <p className="text-gray-600 leading-relaxed">
-                We've helped numerous organizations transform their operations through AI integration, resulting in:
-              </p>
-              <ul className="list-disc list-inside space-y-3 text-gray-600">
-                <li>40% increase in employee productivity</li>
-                <li>60% reduction in routine task completion time</li>
-                <li>85% improvement in problem resolution speed</li>
-              </ul>
+              <div className="bg-white p-8 rounded-xl shadow-sm border border-slate-200">
+                <Award className="w-8 h-8 text-blue-700 mb-4" />
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Our Impact</h2>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Our solutions have helped numerous organizations transform their operations
+                  through AI integration, resulting in:
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-gray-600">
+                  <li>40% increase in employee productivity</li>
+                  <li>60% reduction in routine task completion time</li>
+                  <li>85% improvement in problem resolution speed</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
